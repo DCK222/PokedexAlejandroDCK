@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- Header de bootstrap -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -29,24 +30,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Autor</a>
+                            <a class="nav-link active" aria-current="page" href="#">Alejandro Garcia Dorronsoro</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
+                        
                     </ul>
 
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Html de la pagina -->
+    <!-- logopokemon -->
     <div id="logopokemon">
         <img id="logopok" width="300px" src="./assets/img/pngwing.com.png" alt="">
     </div>
+<!-- zona de la pokedex -->
     <div id="Pokedexcentral">
         <div id="pokedexcentraltodo">
 
             <div id="conjunto">
+              
             <div id="Pokedexcentraltitulo">
                 <h2 id="titulotuspokemons">Tu Pokedex : </h2>
             </div>
@@ -62,71 +66,39 @@
         </div>
         </div>
     </div>
+    <!-- ventana de tu pokedex -->
     <div id="ventana" class="ventana">
         <div class="contenido">
           <div id="titulocontenido">
             <h2 id="titulotuspokemons">Tus Pokemons : </h2>
           </div>
       
-          <div id="contenedortarjetas">
-            <div class="tarjeta tarjeta1">
-              <p>tarjeta1</p>
-            </div>
-            <div class="tarjeta tarjeta2">
-              <p>tarjeta2</p>
-            </div>
-            <div class="tarjeta tarjeta3">
-              <p>tarjeta3</p>
-            </div>
-          </div>
-      
-          <div id="contenedortarjetas2">
-            <div class="tarjeta tarjeta4">
-              <p>tarjeta4</p>
-            </div>
-            <div class="tarjeta tarjeta5">
-              <p>tarjeta5</p>
-            </div>
-            <div class="tarjeta tarjeta6">
-              <p>tarjeta6</p>
-            </div>
-          </div>
-      
-          <div id="contenedortarjetas3">
-            <div class="tarjeta tarjeta7">
-              <p>tarjeta7</p>
-            </div>
-            <div class="tarjeta tarjeta8">
-              <p>tarjeta8</p>
-            </div>
-            <div class="tarjeta tarjeta9">
-              <p>tarjeta9</p>
-            </div>
-          </div>
-      
+          <app-root></app-root>
+           
+      <!-- boton cerrar pokedex ventana flotante -->
           <div id="botoncontenido">
             <button id="cerrarVentana">Cerrar Pokedex...</button>
           </div>
         </div>
       </div>
 
-
+<!-- footer -->
     <footer class="bg-transparent text-center text-white">
         <div id="footer" class="container p-1">
             <section class="mb-2">
-                <a href="#" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
-                        src="./assets/img/github.png" alt=""></i></a>
+                <a href="https://github.com/DCK222" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
+                        src="../assets/img/github.png" alt=""></i></a>
                 <a href="#" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
                         src="./assets/img/google-drive.png" alt=""></i></a>
                 <a href="#" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
                         src="./assets/img/google-mas.png" alt=""></i></a>
-                <a href="#" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
+                <a href="https://www.linkedin.com/in/alejandro-garcia-dorronsoro-819aa2290/" class="btn btn-outline-grey btn-floating m-1" role="button"><img width="30px"
                         src="./assets/img/linkedin.png" alt=""></i></a>
 
             </section>
         </div>
     </footer>
-
+<!-- Script para la ventana flotante -->
     <script src="./assets/js/script.js"></script>
 </body>
 

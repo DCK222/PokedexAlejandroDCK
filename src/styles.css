@@ -1,5 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+
 body{
+  /* estilos predeterminados para el footer  */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
     background-image: url('./assets/img/fondopokk.png');
@@ -9,15 +10,16 @@ body{
     background-attachment: fixed; 
    
 }
+/* estilos predeterminados para el footer */
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    z-index: 999; /* Ajusta según sea necesario */
+    z-index: 999; 
 }
 #titulotuspokemons{
     font-family: 'PressStart2P',sans-serif;
-   
+   /* añadimos la fuente retro */
 }
 
 @keyframes vibrar {
@@ -38,14 +40,14 @@ footer {
     src: url('./assets/fonts/PressStart2P-Regular.ttf') format('truetype');
   }
 
-
+/* estilos para el logo */
 #logopokemon {
     display: flex;
     justify-content: center; 
     align-items: center; 
     width: 100%; 
   }
-
+/* estilos para el div pokedex */
 #Pokedexcentral {
     display: flex;
     flex-direction: column; 
@@ -87,7 +89,7 @@ footer {
     width: 250px;
 }
 
-/* Ventana flotante */
+/* estilos para la ventana flotante */
 .ventana {
     display: none;
     position: fixed;
@@ -108,7 +110,7 @@ footer {
 .contenido {
     text-align: center;
 }
-
+/* estilo para el boton de la ventana flotante */
 #cerrarVentana {
     background-color: #ff0000;
     color: #fff;
@@ -122,33 +124,170 @@ footer {
 }
 
 
-/* estilos para tajetas */
-#contenedortarjetas,
-#contenedortarjetas2,
-#contenedortarjetas3 {
+/* estilos para los contenedores de las tarjetas */
+#contenedortarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 5%;
+  
 }
 
 .tarjeta {
-  background-color: #ff0000;
+  background-color: #bfbfbf;
   width: 300px;
   height: 370px;
   border-radius: 8px;
   border: 4px solid black;
   margin-bottom: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
 #titulocontenido{
     margin-bottom: 2%;
     
 }
+/* estilos para las imagenes de las tarjetas */
+.imagenestarjetas {
+  width: 80%; 
+  height: 45%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 3px solid black;
+  text-align: center;
+  margin-left: 10%;
+}
 
 
-/* Responsive  */
-@media only screen and (min-width: 601px) and (max-width: 1400px) {
+.imagenestarjetas img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; 
+}
+#tarjetanivel{
+  
+}
+
+.infotarjetas {
+  
+}
+.infotarjetas2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3%;
+  
+
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* estilos para los fondos de las tarjetas */
+
+.pikachu {
+  background-color: rgb(250, 243, 36);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nidoran {
+  background-color: rgb(170, 39, 231);
+}
+
+.charmander {
+  background-color: rgb(255, 166, 0);
+}
+.charizard{
+  background-color: rgb(255, 166, 0);
+  
+
+}
+.blastoise{
+  background-color: rgb(0, 162, 255);
+}
+.golbat{
+  background-color: rgb(170, 39, 231);
+}
+.bulbasaur{
+  background-color: rgb(42, 169, 125);
+}
+.caterpie{
+  background-color: rgb(42, 169, 125);
+}
+.metapod{
+  background-color: rgb(42, 169, 125);
+}
+
+
+
+/* De aqui hacia abajo todo es para el responsive de la pagina  */
+@media only screen and (min-width: 1000px) and (max-width: 2100px) {
+  #titulotuspokemons2 {
+    animation: vibrar 0.9s infinite;
+    font-family: 'PressStart2P',sans-serif;
+    font-size: 30px;
+  }
+  #titulotuspokemons{
+    font-family: 'PressStart2P',sans-serif;
+   
+    font-size: 30px;
+  
+}
+
+#contenedortarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* O ajusta según tus necesidades */
+  align-items: stretch; /* Esto hará que las tarjetas se estiren para llenar la altura del contenedor */
+  gap: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#pokedexcentraltodo{
+  border: 4px solid rgb(255, 238, 0) ;
+  width: 40%;
+  height: 48%;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+#pokedexfoto {
+  display: block; 
+  width: 150px;
+}
+#conjunto{
+  position: relative;
+  top: -10%;
+}
+
+#cerrarVentana {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  width: 60%;
+  height: 20%;
+  font-family: 'PressStart2P',sans-serif;
+  font-size: 10px;
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   #titulotuspokemons2 {
     animation: vibrar 0.9s infinite;
     font-family: 'PressStart2P',sans-serif;
@@ -158,5 +297,99 @@ footer {
     font-family: 'PressStart2P',sans-serif;
    
     font-size: 25px;
+  
+}
+#contenedortarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* O ajusta según tus necesidades */
+  align-items: stretch; /* Esto hará que las tarjetas se estiren para llenar la altura del contenedor */
+  gap: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#pokedexcentraltodo{
+  border: 4px solid rgb(255, 238, 0) ;
+  width: 50%;
+  height: 45%;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+#pokedexfoto {
+  display: block; 
+  width: 150px;
+}
+#conjunto{
+  position: relative;
+  top: 10%;
+}
+
+#cerrarVentana {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  width: 60%;
+  height: 20%;
+  font-family: 'PressStart2P',sans-serif;
+  font-size: 10px;
 }
 }
+@media only screen and (min-width: 314px) and (max-width: 600px) {
+  #titulotuspokemons2 {
+    animation: vibrar 0.9s infinite;
+    font-family: 'PressStart2P',sans-serif;
+    font-size: 15px;
+  }
+  #titulotuspokemons{
+    font-family: 'PressStart2P',sans-serif;
+   
+    font-size: 20px;
+  
+}
+#contenedortarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; 
+  gap: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#pokedexcentraltodo{
+  border: 4px solid rgb(255, 238, 0) ;
+  width: 60%;
+  height: 40%;
+  border-radius: 10px;
+  padding: 5%;
+  text-align: center;
+  background-color: #ffffff;
+}
+#pokedexfoto {
+  display: block; 
+  width: 150px;
+}
+#conjunto{
+  position: relative;
+  top: 10%;
+}
+#cerrarVentana {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  width: 60%;
+  height: 20%;
+  font-family: 'PressStart2P',sans-serif;
+  font-size: 10px;
+}
+}
+
