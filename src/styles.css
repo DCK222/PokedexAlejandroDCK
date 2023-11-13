@@ -285,12 +285,12 @@ footer {
   #titulotuspokemons2 {
     animation: vibrar 0.9s infinite;
     font-family: 'PressStart2P',sans-serif;
-    font-size: 30px;
+    font-size: 25px;
   }
   #titulotuspokemons{
     font-family: 'PressStart2P',sans-serif;
    
-    font-size: 30px;
+    font-size: 25px;
   
 }
 
@@ -307,7 +307,7 @@ footer {
 #pokedexcentraltodo{
   border: 4px solid rgb(255, 238, 0) ;
   width: 50%;
-  height: 55%;
+  height: 60%;
   border-radius: 10px;
   padding: 5%;
   text-align: center;
@@ -332,7 +332,11 @@ footer {
   width: 60%;
   height: 20%;
   font-family: 'PressStart2P',sans-serif;
-  font-size: 10px;
+  font-size: 15px;
+}
+#logopok{
+
+  width: 130px;
 }
 
 }
@@ -370,7 +374,7 @@ footer {
 #pokedexcentraltodo{
   border: 4px solid rgb(255, 238, 0) ;
   width: 50%;
-  height: 40%;
+  height: 55%;
   border-radius: 10px;
   padding: 5%;
   text-align: center;
@@ -399,15 +403,19 @@ footer {
 }
 }
 @media only screen and (min-width: 314px) and (max-width: 768px) {
+  #logopok{
+
+    width: 130px;
+  }
   #titulotuspokemons2 {
     animation: vibrar 0.9s infinite;
     font-family: 'PressStart2P',sans-serif;
-    font-size: 20px;
+    font-size: 15px;
   }
   #titulotuspokemons{
     font-family: 'PressStart2P',sans-serif;
    
-    font-size: 20px;
+    font-size: 15px;
   
 }
 #contenedortarjetas {
@@ -423,7 +431,7 @@ footer {
 #pokedexcentraltodo{
   border: 4px solid rgb(255, 238, 0) ;
   width: 60%;
-  height: 35%;
+  height: 45%;
   border-radius: 10px;
   padding: 5%;
   text-align: center;
@@ -449,7 +457,7 @@ footer {
   width: 60%;
   height: 20%;
   font-family: 'PressStart2P',sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 }
 
