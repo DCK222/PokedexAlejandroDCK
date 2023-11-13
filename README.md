@@ -1,6 +1,7 @@
 # PokedexEvaluableAlejandroGarcia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Link to web : 
+https://pokedexalejandro.netlify.app/
 
 ## Development server
 
